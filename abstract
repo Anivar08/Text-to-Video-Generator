@@ -1,0 +1,23 @@
+Abstract
+Customized text-to-video generation aims to generate
+text-guided videos with user-given subjects, which has gained
+increasing attention. However, existing works are primarily limited
+to single-subject oriented text-to-video generation, leaving the
+more challenging problem of customized multi-subject generation
+unexplored. In this paper, we fill this gap and propose a
+novel VideoDreamer framework, which can generate temporally
+consistent text-guided videos that faithfully preserve the visual
+features of the given multiple subjects. Specifically, VideoDreamer
+adopts the pretrained Stable Diffusion with temporal modules as its
+base video generator, taking the power of the text-to-image model
+to generate diversified content. The video generator is further
+customized for multi-subjects, which leverages the proposed DisenMix Finetuning and Human-in-the-Loop Re-finetuning strategy, to
+tackle the attribute binding problem of multi-subject generation.
+Additionally, we present a disentangled motion customization
+strategy to finetune the temporal modules so that we can
+generate videos with both customized subjects and motions. To
+evaluate the performance of customized multi-subject text-tovideo generation, we introduce the MultiStudioBench benchmark.
+Extensive experiments demonstrate the remarkable ability of
+VideoDreamer to generate videos with new content such as new
+events and backgrounds, tailored to the customized multiple
+subjects.
